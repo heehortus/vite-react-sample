@@ -1,15 +1,10 @@
 /* 리액트, 리액트dom 실행 */
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './css/font.css'
-import './css/index.css'
-import './components/MenuBar.css'
-import Home from './Home.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
 
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    
-    <Home />
-  </StrictMode>,
-)
+    <App />
+  </StrictMode>
+);
