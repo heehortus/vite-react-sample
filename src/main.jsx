@@ -1,11 +1,12 @@
 /* 리액트, 리액트dom 실행 */
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import './css/font.css'
+import './css/index.css'
+import Home from './Home/Home.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Home />
   </StrictMode>,
 )
