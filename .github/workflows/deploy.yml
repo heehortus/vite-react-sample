@@ -3,9 +3,18 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # main 브랜치에 push할 때마다 실행
-  pull_request:
     branches: [main]
+
+# 권한 추가!
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 동시 배포 방지
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -27,9 +36,14 @@ jobs:
       - name: Build 🔨
         run: npm run build
 
-      - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - name: Setup Pages 📄
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact 📤
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: "./dist"
+
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4
