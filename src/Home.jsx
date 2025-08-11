@@ -1,11 +1,12 @@
 import React from "react";
-import "../css/Home.css";
-import "../components/MenuBar.css";
+import "./css/Home.css";
+import "./components/MenuBar.css";
+import CustomCursor from "./components/CustomCursor";
 
 function Home() {
   return (
     <>
-      <div className="customCursor" id="cursor"></div>
+      <CustomCursor />
       <button className="floatingBtn" id="scrollBtn">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path
