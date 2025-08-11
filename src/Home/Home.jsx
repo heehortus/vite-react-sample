@@ -1,6 +1,6 @@
 import React from "react";
-import "./Home.css";
-import "../css/MenuBar.css";
+import "../css/Home.css";
+import "../components/MenuBar.css";
 
 function Home() {
   return (
@@ -24,7 +24,7 @@ function Home() {
           />
         </svg>
       </button>
-          <nav className="main-nav">
+      <nav className="main-nav">
         <div className="nav-wrapper">
           <div className="logo">
             <a href="about.html" className="nav-home">
@@ -95,7 +95,11 @@ function Home() {
           <div className="project-grid">
             <div className="project-item" data-year="2025">
               <a href="https://github.com/WeCare-DeepDive">
-                <img className="project-img" src="/source/img/project1.png" alt="위케어 프로젝트" />
+                <img
+                  className="project-img"
+                  src="/source/img/project1.png"
+                  alt="위케어 프로젝트"
+                />
                 <div className="overlay">
                   <div className="project-description">
                     <h2>위케어</h2>
@@ -108,7 +112,11 @@ function Home() {
             </div>
             <div className="project-item" data-year="2023">
               <a href="https://github.com/MuslingProject">
-                <img className="project-img" src="/source/img/project2.png" alt="Mus-ling 프로젝트" />
+                <img
+                  className="project-img"
+                  src="/source/img/project2.png"
+                  alt="Mus-ling 프로젝트"
+                />
                 <div className="overlay">
                   <div className="project-description">
                     <h2>Mus-ling</h2>
@@ -120,7 +128,11 @@ function Home() {
               </a>
             </div>
             <div className="project-item" data-year="2023">
-              <img className="project-img" src="/source/img/project1.png" alt="Project" />
+              <img
+                className="project-img"
+                src="/source/img/project1.png"
+                alt="Project"
+              />
               <div className="overlay">
                 <div className="project-description">
                   <h2>Project</h2>
@@ -129,7 +141,11 @@ function Home() {
               </div>
             </div>
             <div className="project-item" data-year="2022">
-              <img className="project-img" src="/source/img/project1.png" alt="Project" />
+              <img
+                className="project-img"
+                src="/source/img/project1.png"
+                alt="Project"
+              />
               <div className="overlay">
                 <div className="project-description">
                   <h2>Project</h2>
@@ -138,7 +154,11 @@ function Home() {
               </div>
             </div>
             <div className="project-item" data-year="2021">
-              <img className="project-img" src="/source/img/project1.png" alt="Project" />
+              <img
+                className="project-img"
+                src="/source/img/project1.png"
+                alt="Project"
+              />
               <div className="overlay">
                 <div className="project-description">
                   <h2>Project</h2>
@@ -147,7 +167,11 @@ function Home() {
               </div>
             </div>
             <div className="project-item" data-year="2020">
-              <img className="project-img" src="/source/img/project1.png" alt="Project" />
+              <img
+                className="project-img"
+                src="/source/img/project1.png"
+                alt="Project"
+              />
               <div className="overlay">
                 <div className="project-description">
                   <h2>Project</h2>
@@ -156,7 +180,11 @@ function Home() {
               </div>
             </div>
             <div className="project-item" data-year="2019">
-              <img className="project-img" src="/source/img/project1.png" alt="Project" />
+              <img
+                className="project-img"
+                src="/source/img/project1.png"
+                alt="Project"
+              />
               <div className="overlay">
                 <div className="project-description">
                   <h2>Project</h2>
