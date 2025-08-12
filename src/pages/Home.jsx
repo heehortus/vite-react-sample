@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Home.css";
 import FloatingBtn from "../components/FloatingBtn";
+import MySwiper from "../components/MySwiper";
 
 function Home() {
   return (
@@ -49,6 +50,9 @@ function Home() {
           <div className="background-gradient"></div>
           {/* <!-- animation --> */}
         </section>
+      </div>
+      <div className="container">
+        <MySwiper />
       </div>
     </>
   );
