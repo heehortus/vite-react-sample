@@ -1,10 +1,16 @@
+import React from "react";
+import MySwiper from "../components/MySwiper";
+
 // src/pages/Contact.jsx
-function Contact() {
+function Project() {
   return (
-    <div>
-      <h1>프로젝트</h1>
+    <div className="container">
+      <section style={{ margin: "50px 0" }}>
+        <h2>프로젝트 갤러리</h2>
+        <MySwiper />
+      </section>
     </div>
   );
 }
 
-export default Contact;
+export default Project;
